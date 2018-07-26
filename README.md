@@ -28,7 +28,7 @@ git clone https://github.com/anuj-aggarwal/chitchat-bot.git
 
 ## Setup
 
-```
+```javascript
 // Require the Library
 const ChitChatBot = require("chitchat-bot");
 
@@ -41,7 +41,11 @@ const myBot = new ChitChatBot(username, clientSecret);
 ## Usage
 
 Private Chats:
-```
+```javascript
+const ChitChatBot = require("chitchat-bot");
+const myBot = new ChitChatBot(username, clientSecret);
+
+
 // Sets up Event Listener to listen for New Chats
 myBot.onNewChat((username) => {
     // Can get Called Multiple Times for same username
@@ -64,7 +68,11 @@ myBot.messageUser(username, messageBody);
 ```
 
 Channels:
-```
+```javascript
+const ChitChatBot = require("chitchat-bot");
+const myBot = new ChitChatBot(username, clientSecret);
+
+
 // Join a Channel
 myBot.joinChannel(channelName);
 
